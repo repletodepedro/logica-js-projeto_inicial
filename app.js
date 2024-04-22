@@ -11,8 +11,7 @@ while (chute != numeroSecreto) {
 
     // se o chute for igual ao número secreto
     if (chute == numeroSecreto) {
-        // console.log(`você descobriu o número secreto ${numeroSecreto} `);
-        alert(`voce descobriu o numero secreto ${numeroSecreto} com ${tentativas} tentativas`);
+       break;
     }
 
     else {
@@ -25,4 +24,13 @@ while (chute != numeroSecreto) {
 
         tentativas++;
     }
+}
+
+if (tentativas > 1) {
+     // console.log(`você descobriu o número secreto ${numeroSecreto} `);
+        alert(`voce descobriu o numero secreto ${numeroSecreto} com ${tentativas} tentativas`);
+}
+
+else {
+        alert(`voce descobriu o numero secreto ${numeroSecreto} com ${tentativas} tentativa`);
 }
