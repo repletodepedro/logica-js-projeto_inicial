@@ -26,11 +26,14 @@ while (chute != numeroSecreto) {
     }
 }
 
-if (tentativas > 1) {
-     // console.log(`você descobriu o número secreto ${numeroSecreto} `);
-        alert(`voce descobriu o numero secreto ${numeroSecreto} com ${tentativas} tentativas`);
-}
+let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa' 
+alert(`voce descobriu o numero secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}!`);
 
-else {
-        alert(`voce descobriu o numero secreto ${numeroSecreto} com ${tentativas} tentativa`);
-}
+// if (tentativas > 1) {
+//      // console.log(`você descobriu o número secreto ${numeroSecreto} `);
+//         alert(`voce descobriu o numero secreto ${numeroSecreto} com ${tentativas} tentativas`);
+// }
+
+// else {
+//         alert(`voce descobriu o numero secreto ${numeroSecreto} com ${tentativas} tentativa`);
+// }
